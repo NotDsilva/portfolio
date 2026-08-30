@@ -1,0 +1,14 @@
+# Raw uncompressed frames & source zip (exceeds GitHub 100MB limit)
+frames/
+frames_24fps_png.zip
+test_frame.webp
+
+# OS & Environment files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

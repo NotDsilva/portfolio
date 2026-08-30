@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norton D'Silva — Director & video editor</title>
+  <meta name="description"
+    content="Portfolio of Norton D'Silva, Creative Director & Video Editor focused on bridging bold creative vision with powerful visual storytelling. Crafting cinematic content and brand experiences designed to captivate audiences, strengthen identities, and turn ideas into impact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Minimalist Loading Indicator -->
+  <div id="loader" class="loader">
+    <div class="loader-track">
+      <div id="loader-progress" class="loader-progress"></div>
+    </div>
+    <span id="loader-text" class="loader-text">Loading 0%</span>
+  </div>
+
+  <!-- Pinned Background Canvas (Always Visible Animation) -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+    <div class="canvas-ambient-vignette"></div>
+  </div>
+
+  <!-- Foreground Glass Content Layer -->
+  <div class="page-content">
+
+    <!-- Top Navigation -->
+    <header class="navbar-wrapper">
+      <nav class="navbar" id="navbar">
+        <a href="#" class="logo">NORTON D'SILVA</a>
+
+        <ul class="nav-links glass-panel">
+          <li><a href="#about" class="nav-link active">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!"
+            target="_blank" rel="noopener noreferrer" class="btn-cta" title="Chat with Norton on WhatsApp">
+            <span>Chat on WhatsApp</span>
+            <span class="btn-icon">↗</span>
+          </a>
+          <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer glass-panel" id="mobile-nav-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>Chat on WhatsApp</span>
+          <span class="btn-icon-circle">↗</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section (Zero Overlap, Clean Framing Layout) -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+
+        <!-- Left Hero Column -->
+        <div class="hero-col hero-col-left">
+          <div class="greeting-row">
+            <span class="greeting">Hi, I am</span>
+          </div>
+
+          <div class="hero-name-word name-norton" aria-label="Norton">Norton</div>
+
+          <div class="hero-subcontent">
+            <div class="badge-trusted">
+              <span class="sparkle">✦</span>
+              <span>Trusted by 20+ clients</span>
+            </div>
+            <h1 class="hero-title">
+              Videos that turn<br>attention into action
+            </h1>
+            <div class="hero-actions">
+              <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!"
+                target="_blank" rel="noopener noreferrer" class="btn-primary" title="Chat on WhatsApp">
+                <span>Chat on WhatsApp</span>
+                <span class="btn-icon-circle">↗</span>
+              </a>
+              <a href="#projects" class="btn-secondary">
+                <span>View My Work</span>
+                <span class="btn-arrow-down">↘</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Spacer for the background subject in canvas -->
+        <div class="hero-center-spacer" aria-hidden="true"></div>
+
+        <!-- Right Hero Column -->
+        <div class="hero-col hero-col-right">
+          <div class="hero-name-word name-dsilva" aria-label="D'Silva">D'Silva</div>
+
+          <div class="social-proof-card glass-card">
+            <div class="avatar-stack">
+              <div class="avatar avatar-1" title="Client Review">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=faces"
+                  alt="Client Avatar 1">
+              </div>
+              <div class="avatar avatar-2" title="Client Review">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
+                  alt="Client Avatar 2">
+              </div>
+              <div class="avatar avatar-3" title="Client Review">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces"
+                  alt="Client Avatar 3">
+              </div>
+              <div class="avatar avatar-4" title="Client Review">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces"
+                  alt="Client Avatar 4">
+              </div>
+            </div>
+            <p class="social-proof-quote">
+              <strong>99.6%</strong> Of My Clients Are Satisfied — Be One Of Them Today.
+            </p>
+            <div class="social-proof-tags">
+              <span class="tag-pill glass-tag">Free Consultation</span>
+              <span class="tag-pill glass-tag">24h Response</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Infinite Scrolling Marquee Banner (Glass Theme) -->
+    <div class="marquee-wrapper glass-bar">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>3 YEARS EXPERIENCE</span>
+          <span class="star">✦</span>
+          <span>20+ DELIVERIES</span>
+          <span class="star">✦</span>
+          <span>99% POSITIVE REVIEWS</span>
+          <span class="star">✦</span>
+          <span>3 YEARS EXPERIENCE</span>
+          <span class="star">✦</span>
+          <span>20+ DELIVERIES</span>
+          <span class="star">✦</span>
+          <span>99% POSITIVE REVIEWS</span>
+          <span class="star">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>3 YEARS EXPERIENCE</span>
+          <span class="star">✦</span>
+          <span>20+ DELIVERIES</span>
+          <span class="star">✦</span>
+          <span>99% POSITIVE REVIEWS</span>
+          <span class="star">✦</span>
+          <span>3 YEARS EXPERIENCE</span>
+          <span class="star">✦</span>
+          <span>20+ DELIVERIES</span>
+          <span class="star">✦</span>
+          <span>99% POSITIVE REVIEWS</span>
+          <span class="star">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section (Glass Theme) -->
+    <section class="about-section" id="about">
+      <div class="about-container glass-card">
+        <div class="about-label">
+          <span class="sparkle">✦</span>
+          <span>About Me</span>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Hey there, I'm <strong>Norton D'Silva</strong> — Creative Director & Video Editor focused on bridging bold
+            creative vision with powerful visual storytelling. Crafting cinematic content and brand experiences designed
+            to captivate audiences, strengthen identities, and turn ideas into impact.
+
+          </p>
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">
+              <span>Start a Project</span>
+              <span class="btn-icon-circle">↗</span>
+            </a>
+            <a href="#projects" class="btn-secondary">
+              <span>View My Work</span>
+              <span class="btn-arrow-down">↘</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client / Partner Logos Bar (Glass Theme) -->
+    <section class="logos-section">
+      <div class="logos-container glass-bar">
+
+        <div class="logo-item logo-rogue">The Imperial goa</div>
+        <div class="logo-item logo-perfect">The Tripod</div>
+        <div class="logo-item logo-cdpet">
+          <span class="cd-badge">Eco</span>Sip
+        </div>
+        <div class="logo-item logo-trava">Sevaco</div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Projects Section (2-Column Staggered Glass Grid) -->
+    <section class="projects-section" id="projects">
+      <div class="projects-container">
+
+        <!-- Section Header -->
+        <div class="projects-header">
+          <div class="badge-projects">
+            <span class="sparkle">✦</span>
+            <span>Featured Video Work</span>
+          </div>
+          <h2 class="section-title">Cinematic Direction & Edits</h2>
+        </div>
+
+        <!-- 2-Column Staggered Grid -->
+        <div class="projects-grid">
+
+          <!-- Column 1 (Left, starting higher) -->
+          <div class="projects-column col-left">
+
+            <!-- Project 1: The Imperial Goa -->
+            <article class="project-card glass-card">
+              <div class="video-preview-wrapper">
+                <iframe src="https://www.youtube.com/embed/MQZmuDcZ8M4?si=8XE7cFZhBA2AxXIm"
+                  title="The Imperial Goa - Tunch Toh Mog (Official Music Video)"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="project-meta">
+                <h3 class="project-title">The Imperial Goa — Tunch Toh Mog</h3>
+                <p class="project-desc">Official Music Video capturing authentic Goan romance, cinematic narrative
+                  staging, and rich color palettes.</p>
+                <span class="project-tag glass-tag">Music Video Direction & Edit</span>
+              </div>
+            </article>
+
+            <!-- Project 3: EcoSip Straw Commercial -->
+            <article class="project-card glass-card">
+              <div class="video-preview-wrapper">
+                <iframe src="https://www.youtube.com/embed/hLoeqQ6nB_A?si=3rJOC3RRY4tHekTG"
+                  title="EcoSip Straw Ad | Award Winning Commercial"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="project-meta">
+                <h3 class="project-title">EcoSip Straw — Commercial</h3>
+                <p class="project-desc">Award-winning sustainability brand commercial engineered with high retention
+                  pacing and crisp sound design.</p>
+                <span class="project-tag glass-tag">Award Winning Commercial</span>
+              </div>
+            </article>
+
+            <!-- Detail Highlight Callout -->
+            <div class="detail-callout glass-card">
+              <p>I strive to pay attention to the smallest details</p>
+            </div>
+
+          </div>
+
+          <!-- Column 2 (Right, staggered lower) -->
+          <div class="projects-column col-right">
+
+            <!-- Project 2: NOKRE - The Tripod -->
+            <article class="project-card glass-card">
+              <div class="video-preview-wrapper">
+                <iframe src="https://www.youtube.com/embed/LfI6yjzNX5M?si=tccc2S2GL5CD_iIk"
+                  title="NOKRE - The Tripod (Official Music Video)"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="project-meta">
+                <h3 class="project-title">NOKRE — The Tripod</h3>
+                <p class="project-desc">High-energy Konkani music video combining modern rhythmic cut transitions, vivid
+                  lighting, and stylized choreography.</p>
+                <span class="project-tag glass-tag">Music Video Production</span>
+              </div>
+            </article>
+
+            <!-- Project 4: Sevaco Commercial -->
+            <article class="project-card glass-card">
+              <div class="video-preview-wrapper">
+                <iframe src="https://www.youtube.com/embed/mnGaOUGBI4U?si=wzAnZnCKGk7pjzb2"
+                  title="Sevaco Commercial | Award Winning Commercial in Goa"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              </div>
+              <div class="project-meta">
+                <h3 class="project-title">Sevaco — Commercial</h3>
+                <p class="project-desc">Award-winning regional commercial blending bold cinematography, narrative
+                  pacing, and product-focused visual effects.</p>
+                <span class="project-tag glass-tag">Commercial & Brand Film</span>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Section (Video Direction & Video Editing) -->
+    <section class="services-section" id="services">
+      <div class="services-container">
+
+        <!-- Section Header -->
+        <div class="services-header">
+          <div class="badge-services">
+            <span class="sparkle">✦</span>
+            <span>Services & Capabilities</span>
+          </div>
+          <h2 class="section-title">Visual Craft That Commands Attention</h2>
+          <p class="section-subtitle">
+            Bridging bold creative vision with meticulous post-production to create films and digital experiences that
+            captivate audiences, elevate brands, and leave a lasting impact.
+          </p>
+        </div>
+
+        <!-- Services Grid (Video Direction & Video Editing) -->
+        <div class="services-grid">
+
+          <!-- Service 1: Video Direction -->
+          <article class="service-card glass-card">
+            <div class="service-card-top">
+              <span class="service-number">01</span>
+              <div class="service-icon-box glass-panel" title="Video Direction">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 7l-7 5 7 5V7z" />
+                  <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="service-card-body">
+              <h3 class="service-title">Video Direction</h3>
+              <p class="service-desc">
+                Leading the visual journey from raw ideation to cinematic reality. Directing commercials, brand films,
+                music videos, and digital narratives with a sharp eye for mood, pacing, and human emotion.
+              </p>
+
+              <div class="service-deliverables">
+                <h4 class="deliverables-heading">Core Capabilities</h4>
+                <div class="deliverables-tags">
+                  <span class="service-tag glass-tag">Creative Direction</span>
+                  <span class="service-tag glass-tag">Shot Design & Framing</span>
+                  <span class="service-tag glass-tag">Cinematography Tone</span>
+                  <span class="service-tag glass-tag">Talent & Scene Staging</span>
+                  <span class="service-tag glass-tag">Brand Storytelling</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss Direction</span>
+                <span class="cta-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Service 2: Video Editing -->
+          <article class="service-card glass-card">
+            <div class="service-card-top">
+              <span class="service-number">02</span>
+              <div class="service-icon-box glass-panel" title="Video Editing">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="3" />
+                  <circle cx="6" cy="18" r="3" />
+                  <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                  <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                  <line x1="8.12" y1="8.12" x2="12" y2="12" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="service-card-body">
+              <h3 class="service-title">Video Editing</h3>
+              <p class="service-desc">
+                Sculpting footage into high-retention, emotionally gripping stories. Combining dynamic rhythm, seamless
+                view transitions, immersive soundscapes, and color grading that elevates production value to the highest
+                tier.
+              </p>
+
+              <div class="service-deliverables">
+                <h4 class="deliverables-heading">Core Capabilities</h4>
+                <div class="deliverables-tags">
+                  <span class="service-tag glass-tag">Dynamic Pacing & Rhythm</span>
+                  <span class="service-tag glass-tag">Advanced Color Grading</span>
+                  <span class="service-tag glass-tag">Sound Design & Mix</span>
+                  <span class="service-tag glass-tag">Motion Titles & VFX</span>
+                  <span class="service-tag glass-tag">High-Retention Delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="service-cta-link">
+                <span>Discuss Editing</span>
+                <span class="cta-arrow">↗</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="testimonials-container">
+
+        <!-- Section Header -->
+        <div class="testimonials-header">
+          <div class="badge-testimonials">
+            <span class="sparkle">✦</span>
+            <span>Client Praise & Proof</span>
+          </div>
+          <h2 class="section-title">Trusted By Visionary Brands & Creators</h2>
+          <p class="section-subtitle">
+            What creative leaders, executive producers, and brand founders say about collaborating with Norton D'Silva.
+          </p>
+        </div>
+
+        <!-- Testimonials Cards Grid (3 Columns) -->
+        <div class="testimonials-grid">
+
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star-rating">★★★★★</span>
+              <span class="rating-badge glass-tag">5.0 / 5.0</span>
+            </div>
+
+            <p class="testimonial-quote">
+              "Working with Norton on my song “NOKHRE” was an incredible experience. From directing the project to
+              editing the final video, he brought a strong creative vision and an amazing attention to detail to every
+              stage of the process.."
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="assets/testimonial1.png" alt="Elena Vance" class="avatar-zoom">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">warren fernandes</h4>
+                <span class="author-role">singer & song writer, The Tripod</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star-rating">★★★★★</span>
+              <span class="rating-badge glass-tag">5.0 / 5.0</span>
+            </div>
+
+            <p class="testimonial-quote">
+              "The rhythm, sound design, and color grading Norton delivered blew our executive team away. He doesn't
+              just cut footage—he finds the emotional heartbeat of the story and amplifies it to perfection."
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces"
+                  alt="Marcus Sterling">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Marcus Sterling</h4>
+                <span class="author-role">Executive Producer, Lumina Films</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-rating">
+              <span class="star-rating">★★★★★</span>
+              <span class="rating-badge glass-tag">5.0 / 5.0</span>
+            </div>
+
+            <p class="testimonial-quote">
+              "Deadlines were tight and stakes were high for our global launch. Norton handled both direction
+              consultation and post-production with unmatched speed and Hollywood-tier finesse. An indispensable
+              creative partner."
+            </p>
+
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces"
+                  alt="Daniel Cruz">
+              </div>
+              <div class="author-info">
+                <h4 class="author-name">Daniel Cruz</h4>
+                <span class="author-role">Founder & Creative Director, Cruz Studio</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Comprehensive Rich Glass Footer -->
+    <footer class="footer-section glass-footer" id="contact">
+      <div class="footer-container">
+
+        <!-- Footer Top CTA Banner -->
+        <div class="footer-cta-banner glass-card">
+          <div class="footer-cta-text">
+            <span class="status-indicator">
+              <span class="status-dot"></span> Available for new projects
+            </span>
+            <h2 class="footer-heading">Let's build something exceptional together.</h2>
+            <p class="footer-subtext">Have a project in mind or looking for a creative partner to elevate your visual
+              storytelling? Let's talk.</p>
+          </div>
+          <div class="footer-cta-buttons">
+            <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!"
+              target="_blank" rel="noopener noreferrer" class="footer-cta-btn whatsapp-cta-btn"
+              title="Chat on WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.058-2.18-.553-1.897-.781-3.122-2.73-3.217-2.855-.095-.125-.769-1.022-.769-1.95 0-.928.486-1.383.659-1.571.173-.188.378-.235.504-.235.126 0 .252.001.361.007.116.005.27-.044.423.323.159.38.542 1.32.589 1.417.048.096.079.208.016.333-.063.125-.094.204-.188.314-.094.11-.198.246-.282.33-.095.096-.194.201-.083.393.111.192.493.814 1.057 1.317.727.648 1.341.849 1.533.945.192.096.305.084.418-.048.113-.131.485-.565.614-.759.129-.193.258-.161.434-.096.176.064 1.118.528 1.31.624.192.096.32.144.368.225.048.08.048.468-.096.873zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.435 5.176L2 22l4.981-1.385C8.423 21.498 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+              </svg>
+              <span>Chat on WhatsApp</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a href="mailto:nortondsilva19@gmail.com" class="footer-secondary-btn" title="Send an Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>Email Norton</span>
+              <span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Footer Main Multi-Column Grid -->
+        <div class="footer-grid">
+
+          <!-- Column 1: Brand & Tagline -->
+          <div class="footer-col footer-col-brand">
+            <a href="#" class="footer-logo">NORTON D'SILVA</a>
+            <p class="footer-brand-desc">
+              Creative Director & Video Editor focused on bridging bold creative vision with powerful visual
+              storytelling. Crafting cinematic content and brand experiences designed to captivate audiences, strengthen
+              identities, and turn ideas into impact.
+
+            </p>
+            <div class="footer-contact-badges">
+              <div class="footer-email-badge glass-panel">
+                <span class="email-label">Email:</span>
+                <a href="mailto:nortondsilva19@gmail.com" class="email-link">nortondsilva19@gmail.com</a>
+              </div>
+              <div class="footer-whatsapp-badge glass-panel">
+                <span class="whatsapp-label">WhatsApp:</span>
+                <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!"
+                  target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                  <span>+91 82080 83210</span>
+                  <span class="whatsapp-pill">Chat ↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Selected Work</a></li>
+              <li><a href="#services">Services & Process</a></li>
+              <li><a href="#testimonials">Client Testimonials</a></li>
+              <li><a href="#contact">Contact & Inquiries</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Expertise -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Expertise</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Video Direction</a></li>
+              <li><a href="#services">Video Editing</a></li>
+              <li><a href="#services">Visual Storytelling</a></li>
+              <li><a href="#services">Cinematography Tone</a></li>
+              <li><a href="#services">Sound Design & Mix</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Socials & Connect -->
+          <div class="footer-col">
+            <h4 class="footer-col-title">Connect</h4>
+            <ul class="footer-links">
+              <li><a
+                  href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project!"
+                  target="_blank" rel="noopener noreferrer" class="link-highlight-whatsapp">WhatsApp (+91 82080 83210)
+                  <span>↗</span></a></li>
+
+              <li><a href="https://www.instagram.com/notcreates?igsi=Nnh0eW9yamNzajlr" target="_blank"
+                  rel="noopener noreferrer">Instagram <span>↗</span></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+          <span class="footer-copy">© 2026 Norton D'Silva. All rights reserved.</span>
+          <a href="https://www.linkedin.com/in/farad-sarkhaji?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            target="_blank" rel="noopener noreferrer" class="footer-credit footer-credit-link">
+            Developed by <strong>Farad Sarkhaji</strong> <span>↗</span>
+          </a>
+          <a href="#hero" class="back-to-top" id="back-to-top" title="Scroll back to top">
+            <span>Back to top</span>
+            <span class="arrow-up">↑</span>
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating WhatsApp Quick Connect Button -->
+  <aside class="floating-whatsapp-wrapper" aria-label="WhatsApp Quick Connect">
+    <a href="https://wa.me/918208083210?text=Hi%20Norton,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!"
+      target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn glass-panel"
+      title="Chat with Norton D'Silva on WhatsApp">
+      <span class="whatsapp-live-dot"></span>
+      <svg class="whatsapp-svg-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.058-2.18-.553-1.897-.781-3.122-2.73-3.217-2.855-.095-.125-.769-1.022-.769-1.95 0-.928.486-1.383.659-1.571.173-.188.378-.235.504-.235.126 0 .252.001.361.007.116.005.27-.044.423.323.159.38.542 1.32.589 1.417.048.096.079.208.016.333-.063.125-.094.204-.188.314-.094.11-.198.246-.282.33-.095.096-.194.201-.083.393.111.192.493.814 1.057 1.317.727.648 1.341.849 1.533.945.192.096.305.084.418-.048.113-.131.485-.565.614-.759.129-.193.258-.161.434-.096.176.064 1.118.528 1.31.624.192.096.32.144.368.225.048.08.048.468-.096.873zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.435 5.176L2 22l4.981-1.385C8.423 21.498 10.15 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" />
+      </svg>
+      <span class="floating-whatsapp-text">Chat on WhatsApp</span>
+    </a>
+  </aside>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
